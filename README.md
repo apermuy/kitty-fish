@@ -67,13 +67,13 @@ tide configure
 
 🎁 **Bonus** 🎁
 
-Interfaz web para configuración:
+⭐ Interfaz web para configuración:
 
 ```
 fish_config
 ```
 
-Agregar custom paths a fish:
+⭐ Agregar custom paths a fish:
 
 ```
 fish_add_path /mi/path/de/ejemplo
@@ -95,3 +95,36 @@ git clone https://github.com/apermuy/kitty-fish.git kitty
 ```
 
 La configuración que aplica es la definida en el fichero **kitty.conf** de este repositorio.
+
+🎁 **Bonus** 🎁
+
+⭐ Iniciar **kitty** siempre a pantalla completa en escritorio GNOME.
+
+Editar el fichero:
+```
+sudo vim /usr/share/applications/kitty.desktop 
+```
+y agregar *-o hide_window_decorations=y --start-as fullscreen* a Exec:
+
+```
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=kitty
+GenericName=Terminal emulator
+Comment=Fast, feature-rich, GPU based terminal
+TryExec=kitty
+Exec=kitty -o hide_window_decorations=y --start-as fullscreen
+Icon=kitty
+Categories=System;TerminalEmulator;
+```
+
+⭐ Listar fuentes disponibles. Más disponibles en 👉 [Nerdfonts](https://www.nerdfonts.com/) 👈 :
+
+```
+kitty +list-fonts
+```
+
+⭐ Instalar 🧛 [Dracula Theme](https://draculatheme.com/kitty) 🧛 para Kitty.
+
+⭐ Temas para Kitty: https://github.com/dexpota/kitty-themes
