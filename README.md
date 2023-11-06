@@ -12,17 +12,15 @@ Instalación:
 apt install fish -y
 ```
 
-Para [Ubuntu 22.04]() La versión estable es 3.3.1. Hay disponible un [PPA para fish]() que permite instalar la versión más reciente.
+Para [Ubuntu 22.04](https://packages.ubuntu.com/jammy/fish) La versión estable es 3.3.1. Hay disponible un [PPA para fish](https://launchpad.net/~fish-shell/+archive/ubuntu/release-3) que permite instalar la versión más reciente.
 
-Agregar PPA:
-
-```
-apt update
-apt install software-properties-common -y
-```
+Agregar PPA e instalar fish:
 
 ```
-apt install fish -y
+sudo apt update
+sudo apt install software-properties-common -y
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt install fish -y
 ```
 
 En mis entornos de trabajo prefiero establecer **fish** con shell por defecto, tanto para root como para mi usuario del sistema. Hay varias opciones, recomiendo:
